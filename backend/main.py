@@ -1,9 +1,18 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from graph.workflow import graph
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class StartupRequest(BaseModel):
     idea: str
@@ -14,5 +23,7 @@ def generate(request: StartupRequest):
     result = graph.invoke({
         "idea": request.idea
     })
+
+    print(result)
 
     return result
