@@ -89,19 +89,19 @@ LangGraph Workflow
 
 ## 🏠 Home Page
 
-![Home](screenshots/home.png)
+![Home](screenshots/Homepage.png)
 
 ---
 
 ## 🔐 Google Authentication
 
-![Login](screenshots/login.png)
+![Login](screenshots/Google%20Login.png)
 
 ---
 
 ## 💡 Startup Idea
 
-![Input](screenshots/startup-input.png)
+![Input](screenshots/Search%20box.png)
 
 ---
 
@@ -113,25 +113,20 @@ LangGraph Workflow
 
 ## 📊 Generated Report
 
-![Report](screenshots/report.png)
+![Report](screenshots/Recent%20Plans.png)
 
----
-
-## 📈 Financial Dashboard
-
-![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## 📂 Startup History
 
-![History](screenshots/history.png)
+![History](screenshots/Recent%20Plans.png)
 
 ---
 
 ## 📄 PDF Report
 
-![PDF](screenshots/pdf.png)
+![PDF](screenshots/Report%20Download.png)
 
 ---
 
