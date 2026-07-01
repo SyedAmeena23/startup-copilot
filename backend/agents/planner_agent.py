@@ -1,6 +1,7 @@
 from services.llm import llm
 
 def planner_agent(state):
+    print("Planner agent invoked with state:", state)
 
     prompt = f"""
     Startup Idea:

@@ -1,6 +1,8 @@
 from services.llm import llm
 
 def competitor_agent(state):
+    print("Competitor agent invoked with state:", state)
+
 
     prompt = f"""
 Startup Idea:

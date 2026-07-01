@@ -1,6 +1,7 @@
 from services.llm import llm
 
 def market_agent(state):
+    print("Market agent invoked with state:", state)
 
     prompt = f"""
     Startup Idea:

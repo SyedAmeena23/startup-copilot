@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+startup.db
+startup_report.pdf
+*.db

@@ -1,6 +1,8 @@
 from services.llm import llm
+import json
 
 def finance_agent(state):
+    print("Finance agent invoked with state:", state)
 
     prompt = f"""
 Startup Idea:
@@ -12,15 +14,21 @@ Market Analysis:
 Competitor Analysis:
 {state["competitor_analysis"]}
 
-Based on the above information estimate:
+Return ONLY valid JSON.
 
-- Initial Investment
-- Monthly Expenses
-- Revenue Projection
-- Profit Projection
-- Break-even Point
+Format:
 
-Use realistic assumptions based on the competitors.
+{{
+    "investment":"",
+    "monthly_expenses":"",
+    "monthly_revenue":"",
+    "profit":"",
+    "break_even":""
+}}
+
+Do not write markdown.
+Do not use ```json.
+Return only the JSON object.
 """
 
     response = llm.invoke(prompt)

@@ -11,4 +11,7 @@ class StartupState(TypedDict):
     product_strategy: str
     marketing_strategy: str
 
-    final_report: str
+    startup_score: int
+    recommendation: str
+
+    final_report: dict
