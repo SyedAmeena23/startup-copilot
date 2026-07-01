@@ -113,7 +113,7 @@ LangGraph Workflow
 
 ## 📊 Generated Report
 
-![Report](screenshots/Recent%20Plans.png)
+![Report](screenshots/Report%20Download.png)
 
 
 ---
